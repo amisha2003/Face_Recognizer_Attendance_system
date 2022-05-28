@@ -63,6 +63,8 @@ class Face_recognition:
             for (x,y,w,h) in feature:
                 cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),3)
                 id,predict=clf.predict(gray_image[y:y+h,x:x+w])
+
+                print(id)
                 confidence=int((100*(1-predict/300)))
 
                 conn=mysql.connector.connect(host="localhost",user="root",password="Ami@1555",database="face_recognition")
@@ -70,22 +72,18 @@ class Face_recognition:
 
                 my_cursor.execute("select Name from student where StudentId="+str(id))
                 n=my_cursor.fetchone()
-                n=str(n)
                 n="+".join(n)
 
                 my_cursor.execute("select Roll from student where StudentId="+str(id))
                 r=my_cursor.fetchone()
-                r=str(r)
                 r="+".join(r)
 
                 my_cursor.execute("select Department from student where StudentId="+str(id))
                 d=my_cursor.fetchone()
-                d=str(d)
                 d="+".join(d)
 
                 my_cursor.execute("select StudentId from student where StudentId="+str(id))
                 i=my_cursor.fetchone()
-                i=str(i)
                 i="+".join(i)
 
                 
