@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "MyFirstConnection",
+      "database": "face_recognition",
+      "username": "root@localhost",
+      "password": "Ami@1555"
+    }
+  ]
+}
