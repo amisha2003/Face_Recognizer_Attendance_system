@@ -114,7 +114,7 @@ class Student:
         class_student_frame = LabelFrame(left_frame,bd=2,relief=RIDGE,text="Class Student Information",font=("time new roman",12,"bold"))
         class_student_frame.place(x=10,y=355,width=850,height=300)
 #id
-        studentid_label=Label(class_student_frame,text='Student:',font=("time new roman",12,"bold"),bg="white")
+        studentid_label=Label(class_student_frame,text='StudentId:',font=("time new roman",12,"bold"),bg="white")
         studentid_label.grid(row=0,column=0,padx=10,pady=5,sticky=W)
 
         studentid_entry=ttk.Entry(class_student_frame,textvariable=self.var_id,width=20,font=("times new roman",13,"bold"))
