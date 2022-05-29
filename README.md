@@ -32,7 +32,7 @@ After cloning the project:
 
 Start the server:
 ```bash
-  python login.py
+  python Face_Recognition_software.py
 ```
 in terminal
 
@@ -40,4 +40,7 @@ in terminal
 
 - MySql
   -https://dev.mysql.com/doc/
+  
+## Desktop App
+- https://drive.google.com/file/d/1ExtmTQwScwp4jEqX7NXDi4VJR4GO0tXh/view?usp=sharing
 
